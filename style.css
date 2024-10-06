@@ -1,0 +1,71 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #3d839e;
+}
+.container {
+  background: #fff;
+  border-radius: 10px;
+  width: 20vw;
+  margin: auto;
+  margin-top: 20vh;
+  text-align: center;
+  border: none;
+  padding: 35px;
+}
+input {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 25px;
+}
+#qrtext {
+  padding: 10px 0;
+  font-size: 20px;
+}
+#generate-QR {
+  background-color: #3d839e;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+}
+#qrcode_box{
+  width: 250px;
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+#qrcode_box img{
+  width: 90%;
+  padding: 12px 0;
+}
+#qrcode_box.show-QRcode{
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #333;
+}
+.error{
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+  0%{
+    transform: translate(0);
+  }
+  25%{
+    transform: translate(-2px);
+  }
+  50%{
+    transform: translate(0);
+  }
+  75%{
+    transform: translate(2px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
